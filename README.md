@@ -1,1 +1,3 @@
-# 2022-humanoids-calibration
+# dlr-elastic-calibration
+
+This is the website for the paper, hosted by GitHub.
