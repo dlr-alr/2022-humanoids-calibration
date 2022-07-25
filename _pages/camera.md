@@ -18,14 +18,17 @@ The nominal intrinsic paramterers of the camera are:
 | Radial Distortion | \\( \xi_\mathrm{C} \\) | 0.023217     |     |  
 
 The transformation from the last frame of the head to the camera is known from a previous calibration by
-\begin{align} 
-{}^{\mathrm{c}}T_0 =  
+$$
+\begin{align}
+{}^{\mathrm{c}}T_0 =
 \begin{bmatrix}
-2.17783e-02 &  2.04164e-02 &  9.99554e-01 & 1.35092e-01 \\\ 
-1.79227e-02 & -9.99638e-01 &  2.00276e-02 & 7.00945e-04 \\\ 
-9.99602e-01 &  1.74785e-02 & -2.21363e-02 & 1.74262e-01 \\\ 
-0           &  0           &  0           & 1
-\end{bmatrix}   
+0.021778 &  0.204164 &  0.999554e-01 & 0.135092 \\\
+0.017923 & -0.999638 &  0.020028e-02 & 0.000701 \\\
+0.999602 &  0.017479 & -0.022136e-02 & 0.174262 \\\
+0        &  0           &  0         & 1
+\end{bmatrix}
+$$
+
 The calibrateted parameters are: 
 
 Note that the camera is mounted vertical in the robots head.
