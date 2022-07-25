@@ -11,7 +11,7 @@ The nominal intrinsic paramterers of the camera are:
 The calibrateted parameters are: 
 
 | Name              | Symbol                 | Unit   | Nominal Values       | Calibrated Values    |
-|-------------------|------------------------|:------:|:--------------------:|:--------------------:|
+|-------------------|:----------------------:|:------:|:--------------------:|:--------------------:|
 | Resolution        |   /                    | Pixel  | (640, 480)           | /                    |
 | Frustum           |   /                    | Degree | (57, 43)             | /                    |
 | ----------------- |                        | ------ | -------------------- | -------------------- |
@@ -32,7 +32,7 @@ $$
 \end{align}
 $$
 
-
+$$
 \begin{align}
 {}^{\mathrm{c}}T_0 =
 \begin{bmatrix}
@@ -41,6 +41,6 @@ $$
 0.999572 & 0.111314 & -0.027042 &  0.174157 \\\
 0        &  0       &  0        & 1
 \end{bmatrix}
-
+$$
 
 Note that the camera is mounted vertical in the robots head.
