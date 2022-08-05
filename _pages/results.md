@@ -13,7 +13,7 @@ Together, we calibrated the complete chain the robot uses when performing precis
 
 
 
-![Table - Leave one out Analysis](../assets/imgs/pixel_error.png){:.this
+![Pixel Error](../assets/imgs/pixel_error.png){:.this
 style="width: 600px;
 display: block;
 margin-left: auto;
@@ -24,7 +24,7 @@ The entire calibration (left) with geometric and non-geometric parameters distri
 
 ---
 
-![Error Histogram](../assets/imgs/ViconCalibration_2x2.jpg){:.this 
+![Vicon Data Collection](../assets/imgs/ViconCalibration_2x2.jpg){:.this 
 style="width: 600px; 
 display: block;
 margin-left: auto;
@@ -34,10 +34,19 @@ This external tracking system consists of six cameras mounted on the ceiling and
 
 ---
 
-![Table - Calibration Results](../assets/imgs/difference_right_left.png){:.this 
+![Difference Right-Left Arm](../assets/imgs/difference_right_left.png){:.this 
 style="width: 600px; 
 display: block;
 margin-left: auto;
 margin-right: auto"}
 *Absolute cartesian error of the left and right arm after the full calibration.
 The relative error between those two is significantly smaller, indicating that the main part of the remaining error comes from the torso.*
+
+--- 
+
+![Difference Right-Left Arm](../assets/imgs/table.png){:.this 
+style="width: 600px; 
+display: block;
+margin-left: auto;
+margin-right: auto"}
+*Error in image and cartesian space for different calibration models with and w/o virtual noise (VN), with and w/o intrinsic camera parameters (\\(\Theta_\mathrm{C}\\)) and using only the camera (Image) or tracking system (Points).*

@@ -5,7 +5,26 @@ title: Methods
 usemathjax: true
 ---
 
+## Data Collection
+By using a general rejection sampling approach and using the flexibility of the pan-tilt joints of the robots neck we were able to
+collect a large dataset of different robot configurations quickly.
 
+![flowchart](../assets/imgs/kinect-right_q_configurations.png){:.this
+style="width: 600px;
+display: block;
+margin-left: auto;
+margin-right: auto"}
+*The different distributions in configuration space of the right arm with seven joints.
+In red are the [taught poses](https://ieeexplore.ieee.org/document/6225004) and our configurations resulting from the rejection sampling approach in blue.
+The joint limits are in black.*
+
+![flowchart](../assets/imgs/ub4.png){:.this
+style="width: 600px;
+display: block;
+margin-left: auto;
+margin-right: auto"}
+*The different marker positions in the image for the left arm, the pole on the floor and the right arm.
+We move the pan-tilt joints of the robot's neck to get a good coverage of the image over all markers.*
 
 ## Virtual Noise
 
