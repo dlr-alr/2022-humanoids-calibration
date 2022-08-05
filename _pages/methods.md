@@ -2,35 +2,25 @@
 permalink: /methods
 layout: page
 title: Methods
+usemathjax: true
 ---
 
-After calibrating the humanoid robot with joint elasticities as well as lateral elasticities we have an implicit robot 
-model.
-To calculate the position of the body frames we need to solve this model iteratively, which is expensive.
-This especially true for motion planning where we have to evaluate the forward kinematic and its derivative repeatedly.
-To make those calculations efficient we introduce an algorithm that takes into account that for optimized motion planning we have and outer loop which converges.
-This allows us to reduce the number of iterations for the inner torque equilibrium loop. 
-For reasonable elasticities those additional can be skipped completely.
 
----
 
-![flowchart](../assets/imgs/torque_equilibrium.png){:.this 
+## Virtual Noise
+
+![flowchart](../assets/imgs/probabilistic_graph.png){:.this 
 style="width: 600px; 
 display: block;
 margin-left: auto;
 margin-right: auto"}
-*Simulated convergence towards the static torque equilibrium for robots of different stiffness.
-For iteration 0 the elastic effect is ignored.
-The bands indicate the standard deviation for 1000 different joint configurations.*
+*Probabilistic graphical model of the calibration problem including the camera and robot model.
+For each of the \\(N\\) samples, it describes how the pixel coordinates \\(u\\) of a marker is computed from the joint configuration \\(q\\) and the model parameters \\(\Theta\\).
+**Left (w/o red parts)**: Original mapping with the real pixel measurement noise \\(\eta_u\\) as the only source of stochasticity.
+**Right**: An additional virtual cartesian noise node is added to compensate for the imperfect (actually deterministic) kinematic model.
+**Left (with red parts)**: The virtual noise can be incorporated into the original model, resulting in an effective pixel noise with a \\(\tilde{\sigma}_u\\) depending on the distance of the marker to the camera (\\(\propto 1/z^2\\)).*
 
 ---
 
-![flowchart](../assets/imgs/planning_and_torques_flowchart.png){:.this 
-style="width: 400px; 
-display: block;
-margin-left: auto;
-margin-right: auto"}
-*Flowchart of the optimization loop in light gray.
-Dark gray shows the additional loop for the static torque equilibrium.
-As the outer loop converges, no additional passes through the inner torque loop are necessary.*
+
 
