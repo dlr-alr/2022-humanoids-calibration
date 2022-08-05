@@ -7,6 +7,11 @@ This site accompanies the paper [Self-Contained Calibration of an Elastic Humano
 [Johannes Tenhumberg](https://scholar.google.com/citations?user=2RZuYZMAAAAJ&hl=en), [Dominik Winkelbauer](https://scholar.google.com/citations?user=kduGd8wAAAAJ&hl=en), and [Berthold Bäuml](https://scholar.google.com/citations?hl=en&user=fjvpDsEAAAAJ).
 
 
+![Error Histogram](/assets/imgs/calibration_sketch.png){:.this
+style="width: 600px;
+display: block;
+margin-left: auto;
+margin-right: auto"}
 
 # Abstract
 ---
