@@ -59,5 +59,6 @@ Note that the initial frame 0 of the robot is roughly 0.6m above the floor as th
 
 |                                      Left                                      |                                      Pole                                      |                                      Right                                       |
 |:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------:|
-| ![Markers - Left](../assets/gifs/marker_left.gif){:.this style="width: 400px"} | ![Markers - Pole](../assets/gifs/marker_pole.gif){:.this style="width: 400px"} | ![Markers - Right](../assets/gifs/marker_right.gif){:.this style="width: 400px"} | 
+| ![Markers - Left](../assets/gifs/marker_left.gif){:.this style="width: 200px"} | ![Markers - Pole](../assets/gifs/marker_pole.gif){:.this style="width: 200px"} | ![Markers - Right](../assets/gifs/marker_right.gif){:.this style="width: 200px"} | 
+
 *The RGB images collected for each of the three markers*
