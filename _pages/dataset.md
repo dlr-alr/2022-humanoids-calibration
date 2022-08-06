@@ -53,3 +53,11 @@ $$
 $$
 
 Note that the initial frame 0 of the robot is roughly 0.6m above the floor as the description of the torso kinematic starts there. 
+
+
+---
+
+|                                      Left                                      |                                      Pole                                      |                                      Right                                       |
+|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------:|
+| ![Markers - Left](../assets/gifs/marker_left.gif){:.this style="width: 400px"} | ![Markers - Pole](../assets/gifs/marker_pole.gif){:.this style="width: 400px"} | ![Markers - Right](../assets/gifs/marker_right.gif){:.this style="width: 400px"} | 
+*The RGB images collected for each of the three markers*
